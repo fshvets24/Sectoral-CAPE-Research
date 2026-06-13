@@ -4,8 +4,8 @@
 ================================================================================
 SECTORAL CAPE AND SECTOR RETURNS — FULL ANALYSIS PIPELINE
 ================================================================================
-Course paper, NaUKMA, Faculty of Economic Sciences.
-Author: Fyodor Shvets
+
+Author: Fedir Shvets
 
 This single script reproduces every quantitative result reported in Chapters 2
 and 3 of the paper, from raw inputs to final tables. It is organised in eight
