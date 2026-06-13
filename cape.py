@@ -66,7 +66,7 @@ USAGE
 --------------------------------------------------------------------------------
     1. Set DATA_DIR to the folder containing the input files.
     2. Run:  python cape_analysis.py
-    3. Outputs: console tables + panel_full.csv, results_table.csv, and figures.
+    3. Output: panel_full.csv.
 ================================================================================
 """
 
