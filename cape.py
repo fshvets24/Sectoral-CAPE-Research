@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 ================================================================================
 SECTORAL CAPE AND SECTOR RETURNS — FULL ANALYSIS PIPELINE
