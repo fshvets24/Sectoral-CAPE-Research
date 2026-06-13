@@ -214,14 +214,7 @@ def build_panel(eps, prc, macro):
     sector's own expanding mean. Forward returns are log price ratios h quarters
     ahead. A dummy flags Communication Services from 2018Q4 (the GICS break).
     """
-    # IMPORTANT: merge order matters. The 40-quarter earnings average must be
-    # computed on the FULL earnings series (which begins in 2008 for every
-    # sector, including the proforma Real Estate series), BEFORE restricting to
-    # quarters where ETF prices exist. A naive inner merge would truncate the
-    # short-history sectors (XLC from 2018, XLRE from 2015) below the 40-quarter
-    # window and silently drop them from the panel. We therefore LEFT-merge
-    # prices onto the full earnings panel, so earnings rows survive even where
-    # prices are absent; CAPE then appears wherever a price exists.
+    
     df = (eps.merge(prc, on=["ticker", "q"], how="left")
               .merge(macro, on="q", how="left")
               .sort_values(["ticker", "q"]).reset_index(drop=True))
